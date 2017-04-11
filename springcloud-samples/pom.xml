@@ -39,6 +39,9 @@
     <modules>
         <module>simple-provider-user</module>
         <module>simple-consumer-movie</module>
+        <module>simple-consumer-movie-feign</module>
+        <module>simple-consumer-movie-ribbon</module>
+        <module>simple-consumer-movie-ribbon-properties-customizing</module>
         <module>simple-discovery-eureka</module>
     </modules>
 

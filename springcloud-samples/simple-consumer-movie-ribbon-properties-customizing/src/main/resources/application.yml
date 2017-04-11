@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: simple-consumer-movie-ribbon-properties-customizing
+server:
+  port: 8011
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    heartcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true
+simple-provider-user:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

@@ -1,3 +1,9 @@
+#security:
+#  basic:
+#    enabled: true
+#  user:
+#    name: user
+#    password: password
 server:
   port: 8761
 eureka:
@@ -6,3 +12,5 @@ eureka:
       defaultZone: http://localhost:8761/eureka
     register-with-eureka: false
     fetch-registry: false
+    healthcheck:
+      enabled: true

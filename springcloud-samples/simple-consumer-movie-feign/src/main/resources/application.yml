@@ -1,11 +1,13 @@
+spring:
+  application:
+    name: simple-consumer-movie-feign
 server:
-  port: 7901
+  port: 7911
 eureka:
   client:
+    healthcheck:
+      enabled: true
     service-url:
       defaultZone: http://localhost:8761/eureka
   instance:
     prefer-ip-address: true
-spring:
-  application:
-    name: simple-consumer-movie
